@@ -8,11 +8,12 @@ var burger = {
     },
     insert: function(cols,vals,cb) {
         orm.insertOne("burgers",cols,vals, function(res){
+            console.log("adding burger")
             cb(res);
         })
     },
     update: function(objColVals,condition,cb) {
-        orm.updateOne("burgers",condition,function(res) {
+        orm.updateOne("burgers",objColVals,condition, function(res) {
             cb(res);
         })
     }

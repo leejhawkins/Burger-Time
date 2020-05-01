@@ -13,12 +13,12 @@ router.get("/", function(req, res) {
   });
   
   router.post("/api/burgers", function(req, res) {
-    burger.create([
-      "Burger Name", "Devoured"
+    burger.insert([
+      "burger_name"
     ], [
-      req.body.burger_name, req.body.devoured
+      req.body.burger
     ], function(result) {
-      // Send back the ID of the new quote
+     
       res.json({ id: result.insertId });
     });
   });
@@ -28,7 +28,7 @@ router.get("/", function(req, res) {
   
     console.log("condition", condition);
   
-    burger                             .update({
+    burger.update({
       devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
