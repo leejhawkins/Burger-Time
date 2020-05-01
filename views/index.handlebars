@@ -1,48 +1,57 @@
-<h1>Burger Time!</h1>
+<h1><img src="https://fontmeme.com/permalink/200501/0419822c99c58f7a68e785dfe25b8275.png" alt="burger-king-font"
+    border="0"></h1>
 
 <div class="container">
-  <div class="row">
+  <div class="row main">
     <div class="col-4">
-      <h3>Burgers that aren't devoured</h3>
+      <h3><img src="https://fontmeme.com/permalink/200501/f68dc36c0847491917fea61dac4b4d7d.png" alt="burger-king-font"
+          border="0"></h3>
 
-      <ul>
+      
         {{#each burgers}}
         {{#unless devoured}}
-        <li>
-          <p>
-            {{this.id}}.{{this.burger_name}}
-            <button data-burgerid="{{this.id}}" class="devourburg">Devour</button>
-          </p>
-        </li>
-        {{/unless}}
-        {{/each}}
-      </ul>
+        <div class="row burger">
+          <div class="col-9">
+            <img class="icon" src="/assets/images/hamburgericon.png">
+            {{this.burger_name}}
+          </div>
+          <div class="col-3">
+            <button data-burgerid="{{this.id}}" class="btn btn-danger devourburg ">Devour</button>
+          </div>
+        </div>
+          {{/unless}}
+          {{/each}}
+        
+     
+
     </div>
-    <div class="col-4">
-      <h3>Add a Burger</h3>
+    <div class="col-3">
+      <h3><img src="https://fontmeme.com/permalink/200501/2ec29937d7dd0abb861d85e42120e87e.png" alt="burger-king-font"
+          border="0"></h3>
       <form id="addburger">
 
         <div class="form-group">
           <label for="burg">Burger Name:</label>
           <input type="text" id="burg" name="burger">
         </div>
-        <button type="submit">Add Burger</button>
+        <button type="submit" class="btn btn-danger">Add Burger</button>
       </form>
     </div>
 
-    <div class="col-4">
-      <h3>Burgers that are devoured</h3>
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        <li>
-          <p>
-            {{this.id}}.{{this.burger_name}}
-          </p>
-        </li>
-        {{/if}}
-        {{/each}}
-      </ul>
+    <div class="col-5">
+      <h3><img src="https://fontmeme.com/permalink/200501/90b644608e76590e8f2842ad9393a24c.png" alt="burger-king-font"
+          border="0"></h3>
+
+      {{#each burgers}}
+      {{#if devoured}}
+
+      <p>
+        <img class="icon" src="/assets/images/meal.png">
+        {{this.burger_name}}
+      </p>
+
+      {{/if}}
+      {{/each}}
     </div>
   </div>
 </div>

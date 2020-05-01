@@ -1,4 +1,29 @@
-h1 {
+h1,h3 {
     text-align:center;
 }
+.form-group {
+    position: relative;
+    left: 50px;
+}
+.main {
+    border-width: 5px;
+    border-color: black;
+    border: solid;
+    border-radius: 10px;
+    background-color:yellow;
+}
+.burger {
+    margin-bottom: 15px;
+}
+body {
+    font-family: cooper;
+}
+.btn {
+    float:right;
+}
+
+.icon {
+    height: 20px;
+}
+
 
