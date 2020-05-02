@@ -10,6 +10,7 @@ var connection
   password: "hotsauce26",
   database: "burgers_db"
 });
+}
 
 // Make connection.
 connection.connect(function(err) {
