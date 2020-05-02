@@ -22,8 +22,12 @@ body {
     float:right;
 }
 
-.icon {
+.b-icon {
     height: 20px;
+}
+
+.e-icon {
+    height: 35px;
 }
 
 
