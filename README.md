@@ -1,1 +1,1 @@
-# ![Burger Time] (public/assets/images/burgertime.png)
+# ![Burger Time](public/assets/images/burgertime.png)
