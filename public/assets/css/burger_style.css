@@ -2,7 +2,7 @@ h1,h3 {
     text-align:center;
 }
 .column-title {
-    height: 18px;
+    width: 80%;
 }
 
 h1 {
@@ -41,8 +41,9 @@ body {
 .e-icon {
     height: 35px;
 }
-#addburger {
-    text-align:center;
+#burg {
+    width:80%;
+    text-align: center;
 }
 
 
