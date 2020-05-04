@@ -1,6 +1,9 @@
 h1,h3 {
     text-align:center;
 }
+.column-title {
+    height: 18px;
+}
 
 h1 {
     margin-top:40px;
@@ -8,7 +11,7 @@ h1 {
 }
 .form-group {
     position: relative;
-    left: 50px;
+    left: 20px;
 }
 .main {
     border-width: 5px;
@@ -23,8 +26,12 @@ h1 {
 body {
     font-family: cooper;
 }
-.btn {
+.devourburg {
     float:right;
+    
+}
+.btn-danger {
+    padding: 0px 5px;
 }
 
 .b-icon {
@@ -33,6 +40,9 @@ body {
 
 .e-icon {
     height: 35px;
+}
+#addburger {
+    text-align:center;
 }
 
 

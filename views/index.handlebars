@@ -11,11 +11,11 @@
         {{#each burgers}}
         {{#unless devoured}}
         <div class="row burger">
-          <div class="col-9">
+          <div class="col-7">
             <img class="b-icon" src="/assets/images/hamburgericon.png">
             {{this.burger_name}}
           </div>
-          <div class="col-3">
+          <div class="col-5">
             <button data-burgerid="{{this.id}}" class="btn btn-danger devourburg ">Devour<img class="b-icon" src="/assets/images/eatenhamburgericon2.png"></button>
           </div>
         </div>
